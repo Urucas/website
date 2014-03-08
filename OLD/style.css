@@ -1,0 +1,847 @@
+/* @override http://localhost:8888/urucas/style.css */
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #dfdfdf url(images/bg.jpg) repeat-x 0 top;
+	color: #d7d6d7;
+	font: normal 13px/19px 'Open Sans', sans-serif;
+}
+
+/* Para Safari */
+::selection {
+background: #00c62b;
+}
+
+/* Para Firefox */
+::-moz-selection {
+background: #00c62b;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+h1 {
+	font-size: 23px;
+	font-weight: normal;
+	font-style: normal;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+h2 {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	border-bottom: 1px solid #fffeff;
+	padding-bottom: 6px;
+	width: 810px;
+	margin: 0 auto;
+}
+
+h3 {
+	font-style: italic;
+	font-size: 14px;
+	padding-bottom: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+p {
+	font-weight: normal;
+	font-style: normal;
+	margin-top: 7px;
+}
+
+
+
+.header {
+	width: 100%;
+	height: 182px;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 50;
+	background: url(images/header.png) repeat-x;
+	top: 0;
+	left: 0;
+}
+
+#header_content {
+	width: 994px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 410px;
+	float: left;
+}
+
+/* @group Menu */
+
+.menu {
+	width: 531px;
+	float: right;
+	height: 142px;
+	background: url(images/menu.png) no-repeat center top;
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 73px 0 0 58px;
+}
+
+.menu ul li {
+	float: left;
+}
+
+li.menu-01 a {
+	width: 101px;
+	height: 17px;
+	background: url(images/menu-01.jpg) 0 top;
+	margin: 0 18px;
+}
+
+li.menu-01 a:hover {
+	width: 101px;
+	height: 17px;
+	background: url(images/menu-01.jpg) 0 center;
+}
+
+
+
+li.menu-02 a {
+	width: 58px;
+	height: 17px;
+	background: url(images/menu-02.jpg) 0 top;
+	margin-right: 18px;
+	margin-left: 18px;
+}
+
+li.menu-02 a:hover {
+	width: 58px;
+	height: 17px;
+	background: url(images/menu-02.jpg) 0 center;
+}
+
+
+
+
+
+li.menu-03 a {
+	width: 82px;
+	height: 17px;
+	background: url(images/menu-03.jpg) 0 top;
+	margin-left: 18px;
+}
+
+li.menu-03 a:hover {
+	width: 83px;
+	height: 17px;
+	background: url(images/menu-03.jpg) 0 center;
+}
+
+/* @end */
+
+#wrapper {
+	margin: 0 auto;
+	background: url(images/wrapper.png) center;
+	width: 1200px;
+	top: 0;
+	position: relative;
+	left: 2941px;
+}
+
+.social-bird {
+	position: fixed;
+	padding-top: 196px;
+	z-index: 10;
+}
+
+.social-bird .twitter a {
+	background: url(images/social-bird.png) left top;
+	height: 89px;
+	width: 171px;
+}
+
+.social-bird .twitter a:hover {
+	background: url(images/social-bird.png) left 157px;
+	height: 89px;
+	width: 171px;
+}
+
+.social-bird .facebook a {
+	height: 69px;
+	background: url(images/social-bird.png) no-repeat 0 -88px;
+}
+
+.social-bird .facebook a:hover {
+	background: url(images/social-bird.png) no-repeat 0 bottom;
+}
+
+#about {
+	padding-top: 192px;
+	width: 880px;
+	padding-left: 160px;
+	padding-right: 160px;
+	background: url(images/about-bg.png) no-repeat center 115px;
+	margin-bottom: 400px;
+	display: inline-block;
+}
+
+#work {
+	padding-top: 192px;
+	width: 880px;
+	padding-left: 160px;
+	padding-right: 160px;
+	background: url(images/work-bg.png) no-repeat center center;
+	margin-bottom: 400px;
+	display: inline-block;
+	position: relative;
+}
+
+.rama-derecha {
+	height: 120px;
+	position: absolute;
+	z-index: 6;
+	top: 536px;
+	background: url(images/rama-izq-central.png) repeat-x 0 90px;
+	display: inline;
+	left: 1071px;
+}
+
+.rama-fin-derecha {
+	width: 214px;
+	height: 140px;
+	background: url(images/rama-der-fin.png) no-repeat left top;
+	margin-top: 14px;
+	float: right;
+}
+
+.rama-inicio-derecha {
+	background: url(images/rama-der-inicio.png) no-repeat right top;
+	height: 400px;
+	width: 221px;
+	float: left;
+}
+
+/* @group Rama Izq */
+
+.rama-izquierda {
+	height: 120px;
+	position: absolute;
+	z-index: 6;
+	top: 270px;
+	right: 1065px;
+	background: url(images/rama-izq-central.png) repeat-x 0 90px;
+	display: inline;
+}
+
+.rama-fin {
+	width: 214px;
+	height: 140px;
+	background: url(images/rama-izq-fin.png) no-repeat left top;
+	margin-top: 14px;
+	float: left;
+}
+
+.rama-central {
+	background-repeat: repeat-x;
+	background-position: right top;
+	float: left;
+}
+
+.rama-inicio {
+	background: url(images/rama-izq-inicio.png) no-repeat right top;
+	height: 400px;
+	width: 221px;
+	float: right;
+}
+
+.cartel {
+	width: 821px;
+	background: url(images/cartel.png) no-repeat left bottom;
+	height: 476px;
+	margin-right: 40px;
+	float: left;
+}
+
+.cartel-top {
+	height: 76px;
+	padding-top: 15px;
+	margin-top: 1px;
+}
+
+.detail-loro {
+	z-index: 150;
+	float: left;
+	position: absolute;
+	bottom: 18px;
+	left: 400px;
+}
+
+.detail-ornero {
+	z-index: 150;
+	float: left;
+	position: absolute;
+	bottom: 18px;
+	right: 149px;
+}
+
+.detail-oruganaranja {
+	z-index: 150;
+	float: left;
+	position: absolute;
+	bottom: 14px;
+	left: 407px;
+}
+
+.detail-canarios {
+	z-index: 150;
+	float: left;
+	position: absolute;
+	bottom: 6px;
+	right: 251px;
+}
+
+.volver a {
+	width: 134px;
+	height: 75px;
+	float: left;
+	background: url(images/volver.png) no-repeat left top;
+}
+
+.volver a:hover {
+	width: 134px;
+	height: 75px;
+	float: left;
+	background: url(images/volver.png) no-repeat left bottom;
+}
+
+.more {
+	float: right;
+	width: 196px;
+}
+
+.more-left a {
+	float: left;
+	height: 75px;
+	width: 98px;
+	background: url(images/flecha-left.png) no-repeat left top;
+}
+
+.more-left a:hover {
+	float: left;
+	height: 75px;
+	width: 98px;
+	background: url(images/flecha-left.png) no-repeat left bottom;
+}
+
+.more-right a {
+	float: right;
+	height: 75px;
+	width: 98px;
+	background: url(images/flecha-right.png) no-repeat left top;
+}
+
+.more-right a:hover {
+	float: right;
+	height: 75px;
+	width: 98px;
+	background: url(images/flecha-right.png) no-repeat left bottom;
+}
+
+.cartel-left {
+	float: left;
+	margin-left: 35px;
+	margin-top: 59px;
+}
+
+.cartel-right {
+	width: 369px;
+	float: right;
+	margin-right: 35px;
+	margin-top: 59px;
+}
+
+.cartel-social {
+	height: 47px;
+	width: 330px;
+	display: inline-block;
+}
+
+.cartel-social h4 a {
+	width: 247px;
+	float: left;
+	color: #fffeff;
+	font: italic 17px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.cs-twitter a {
+	background: url(images/cs-twitter.png) no-repeat left top;
+	height: 25px;
+	width: 36px;
+	float: right;
+	margin-right: 5px;
+}
+
+.cs-twitter a:hover {
+	background: url(images/cs-twitter.png) no-repeat left bottom;
+	height: 25px;
+	width: 36px;
+}
+
+.cs-facebook a {
+	background: url(images/cs-facebook.jpg) no-repeat left top;
+	height: 31px;
+	width: 36px;
+	float: right;
+}
+
+.cs-facebook a:hover {
+	background: url(images/cs-facebook.jpg) no-repeat left bottom;
+	height: 31px;
+	width: 36px;
+	float: right;
+}
+
+.cartel-p {
+	width: 366px;
+	display: inline-block;
+	padding-top: 20px;
+	height: 113px;
+}
+
+.cr-bottom {
+	width: 367px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.cr-bottom ul {
+	list-style-type: none;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.cr-bottom ul li {
+	float: left;
+}
+
+li.m-android a {
+	background: url(images/m-android.png) no-repeat left top;
+	height: 44px;
+	width: 38px;
+	margin-right: 10px;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+li.m-android a:hover {
+	background: url(images/m-android.png) no-repeat left bottom;
+	height: 44px;
+	width: 38px;
+}
+
+li.m-bb a {
+	background: url(images/m-bb.png) no-repeat left top;
+	height: 39px;
+	width: 48px;
+	margin-right: 10px;
+	margin-top: 40px;
+}
+
+li.m-bb a:hover {
+	background: url(images/m-bb.png) no-repeat left bottom;
+	height: 39px;
+	width: 48px;
+}
+
+li.m-iphone a {
+	background: url(images/m-iphone.png) no-repeat left top;
+	height: 47px;
+	width: 31px;
+	margin-right: 10px;
+	margin-top: 40px;
+}
+
+li.m-iphone a:hover {
+	background: url(images/m-iphone.png) no-repeat left bottom;
+	height: 47px;
+	width: 31px;
+}
+
+li.m-ovi a {
+	background: url(images/m-ovi.png) no-repeat left top;
+	height: 48px;
+	width: 45px;
+	margin-top: 40px;
+}
+
+li.m-ovi a:hover {
+	background: url(images/m-ovi.png) no-repeat left bottom;
+	height: 48px;
+	width: 45px;
+}
+
+.qr {
+	float: right;
+}
+
+.qr p {
+	margin: 0 0 4px;
+	padding: 0;
+	text-align: center;
+}
+
+/* @end */
+
+#contacto {
+	padding-top: 192px;
+	width: 880px;
+	padding-left: 160px;
+	padding-right: 160px;
+	background: url(images/about-bg.png) no-repeat center top;
+	display: inline-block;
+	margin-bottom: 164px;
+}
+
+.title {
+	float: left;
+}
+
+.parrafo {
+	float: left;
+	width: 230px;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.profile {
+	width: 230px;
+	margin-left: 10px;
+	margin-right: 40px;
+	float: left;
+	position: relative;
+	padding-top: 18px;
+}
+
+.clavo {
+	width: 65px;
+	height: 65px;
+	z-index: 2;
+	position: absolute;
+	background: url(images/cinta.png) no-repeat center top;
+	left: 103px;
+	top: 0;
+}
+
+.center {
+	margin-top: 25px;
+	margin-left: 30px;
+	font-style: italic;
+}
+
+.slider {
+	float: right;
+	width: 550px;
+}
+
+.slide {
+	height: 252px;
+	margin-top: 5px;
+}
+
+.tittle-wood {
+	background: url(images/tittle-wood.png) no-repeat left top;
+	font-size: 27px;
+	padding-top: 15px;
+	padding-left: 7px;
+	text-align: center;
+	width: 146px;
+	padding-bottom: 7px;
+	height: 33px;
+}
+
+.ventana {
+}
+
+/* @group Slide works */
+
+.slide-window {
+	width: 470px;
+	float: left;
+	padding: 13px 10px 8px;
+	background: url(images/slide-bg.png) no-repeat center top;
+}
+
+.item {
+	width: 194px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.item-img {
+	border: 3px solid #000;
+	width: 183px;
+}
+
+.arrow-left a {
+	width: 30px;
+	height: 41px;
+	float: left;
+	margin-top: 65px;
+	background: url(images/arrow-left.png) no-repeat left top;
+}
+
+.arrow-left a:hover {
+	width: 30px;
+	height: 41px;
+	float: left;
+	margin-top: 65px;
+	background: url(images/arrow-left.png) no-repeat left bottom;
+}
+
+.arrow-right a {
+	width: 30px;
+	height: 41px;
+	float: right;
+	margin-top: 65px;
+	background: url(images/arrow-right.png) no-repeat right top;
+}
+
+.arrow-right a:hover {
+	width: 30px;
+	height: 41px;
+	float: right;
+	margin-top: 65px;
+	background: url(images/arrow-right.png) no-repeat right bottom;
+}
+
+/* @end */
+
+/* @group Formulario */
+
+.formulario {
+	float: left;
+	margin-left: 30px;
+}
+
+input {
+	border-style: none;
+	background: url(images/form-input.jpg) no-repeat left top;
+	padding: 8px;
+	width: 215px;
+	color: #0ad22f;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+textarea {
+	margin: 0 0 15px;
+	padding: 11px;
+	border-style: none;
+	height: 112px;
+	background: url(images/form-textarea.jpg) no-repeat left top;
+	width: 209px;
+	font-size: 12px;
+	color: #0ad22f;
+}
+
+input.envio {
+	background: url(images/form-send.png) no-repeat right top;
+	width: 231px;
+	height: 32px;
+}
+
+input.envio:hover {
+	background: url(images/form-send.png) no-repeat right bottom;
+	width: 231px;
+	height: 32px;
+}
+
+.contact-error {
+	width: 166px;
+	height: 24px;
+	position: absolute;
+	left: 743px;
+	background: url(images/contact-error.png) no-repeat left top;
+	padding-left: 34px;
+	padding-top: 6px;
+	z-index: 3;
+}
+
+.contact-ok {
+	width: 166px;
+	height: 24px;
+	position: absolute;
+	left: 743px;
+	background: url(images/contact-error.png) no-repeat left bottom;
+	padding-left: 34px;
+	padding-top: 6px;
+	bottom: 412px;
+	z-index: 4;
+}
+
+/* @end */
+
+/* @group Social */
+
+.social {
+	float: right;
+	width: 210px;
+	margin-right: 61px;
+	background-position: 0;
+	position: relative;
+	margin-top: 77px;
+	padding-top: 21px;
+}
+
+.social-cont h3 {
+	margin: 0;
+	padding-top: 16px;
+	color: #008f55;
+}
+
+.social-cont {
+	padding: 0 15px 15px;
+	background-image: url(images/social-bg.jpg);
+}
+
+
+
+.social-bottom{
+	background: url(images/social-bottom.png) no-repeat left bottom;
+}
+
+.social-facebook a {
+	background: url(images/social-facebook.jpg) no-repeat left top;
+	padding-left: 40px;
+	color: #4f8e1d;
+	font-size: 13px;
+	height: 24px;
+	padding-top: 6px;
+}
+
+.social-facebook a:hover {
+	background: url(images/social-facebook.jpg) no-repeat left bottom;
+	padding-left: 40px;
+	color: #c0c0c0;
+	font-size: 13px;
+	height: 24px;
+	padding-top: 6px;
+}
+
+.social-twitter a {
+	background: url(images/social-twitter.jpg) no-repeat left top;
+	padding-left: 40px;
+	color: #4f8e1d;
+	font-size: 13px;
+	height: 26px;
+	padding-top: 6px;
+}
+
+.social-twitter a:hover {
+	background: url(images/social-twitter.jpg) no-repeat left bottom;
+	padding-left: 40px;
+	color: #c0c0c0;
+	font-size: 13px;
+	height: 26px;
+	padding-top: 6px;
+}
+
+/* @end */
+
+/* @group Ancla */
+
+.ancla {
+	width: 854px;
+	background: url(images/ancla-bg.jpg) no-repeat center center;
+	height: 40px;
+}
+
+.ancla-top a {
+	height: 40px;
+	float: right;
+	background: url(images/ancla-flecha.png) no-repeat center top;
+	width: 40px;
+	margin-left: 24px;
+}
+
+.ancla-top a:hover {
+	height: 40px;
+	float: right;
+	background: url(images/ancla-flecha.png) no-repeat center bottom;
+	width: 40px;
+	margin-left: 24px;
+}
+
+/* @end */
+
+/* @group Footer */
+
+.footer {
+	margin-right: auto;
+	margin-top: 0;
+	margin-left: auto;
+	z-index: 2;
+	background: #371806 0;
+	width: 100%;
+}
+
+.footer-cont {
+	height: 100%;
+	z-index: 6;
+	position: relative;
+	bottom: 87px;
+	background: url(images/footer.png) repeat-x;
+	padding-top: 187px;
+}
+
+.footer-info {
+	width: 902px;
+	margin: 0 0 0 30px;
+	padding: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.footer-lis li {
+	padding-bottom:20px;
+}
+
+.firma {
+	width: 389px;
+	float: left;
+}
+
+.ziris a {
+	width: 313px;
+	text-align: right;
+	float: right;
+	background: url(images/ziris.png) no-repeat right top;
+	padding-right: 39px;
+	padding-top: 9px;
+	padding-bottom: 20px;
+	color: #cf771d;
+}
+
+.ziris a:hover {
+	width: 313px;
+	text-align: right;
+	float: right;
+	background: url(images/ziris.png) no-repeat right bottom;
+	padding-right: 39px;
+	padding-top: 9px;
+	padding-bottom: 20px;
+	color: #75c203;
+}
+
+/* @end */

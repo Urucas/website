@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Urucas - Mobile Development</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="js/urucas.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+var cantidad_carteles = $('.rama-izquierda .cartel').length;
+  var ancho_cartel = 952;
+  var rama_fin = 214;
+  var rama_inicio = 221;
+  var ancho_rama = (ancho_cartel * cantidad_carteles) + rama_fin + rama_inicio ;
+  $('.rama-izquierda').css({'width':ancho_rama});
+
+
+var cantidad_carteles = $('.rama-derecha .cartel').length;
+  var rama_fin_derecha = 214;
+  var rama_inicio = 221;
+  var ancho_rama = (ancho_cartel * cantidad_carteles) + rama_fin + rama_inicio ;
+  $('.rama-derecha').css({'width':ancho_rama});
+ 
+ var ancho_wrapper = $('#wrapper').width();
+var ancho_ramaizq = $('.rama-izquierda').width();
+var ancho_ramader = $('.rama-derecha').width();
+var ancho_total = ancho_wrapper + ancho_ramaizq + ancho_ramader;
+$('.footer').css({'width':ancho_total});
+$('.footer-info').css({'left':ancho_ramaizq+700});
+
+$.scrollTo('#about',400)
+
+ }); 
+</script>
+
+
+
+</head>
+
+<body onload="onload();"> 
+	<a name="top"></a>
+
+	<div class="social-bird">
+    	<div class="twitter"><a href="http://twitter.com/urucas" target="_blank">&nbsp;</a></div>
+        <div class="facebook"><a href="http://facebook.com/urucasteam" target="_blank">&nbsp;</a></div>
+    </div>
+
+
+	<div class="header">
+    	<div id="header_content">
+        	<div class="logo">
+            	<a onclick="$.scrollTo('#about',800)"><img src="images/logo.png" border="0" /></a>
+            </div>
+            <div class="menu">
+            	<ul>
+                	<li class="menu-01"><a onclick="$.scrollTo('#about',800)">&nbsp;</a></li>
+                    <li class="menu-02"><a onclick="$.scrollTo('#work',800)">&nbsp;</a></li>
+                    <li class="menu-03"><a onclick="$.scrollTo('#contacto',800)">&nbsp;</a></li>
+                </ul>
+                <br clear="all" />
+            </div>
+            <br clear="all" />
+        </div>
+    </div>
+    <div id="wrapper">
+    
+  
+    <!-- inica ABOUT US --->
+    	<div id="about">
+        	<div class="title">
+            	<img src="images/about.png" />
+            </div>
+            <div class="parrafo" >
+				Somos una empresa joven con una visión emprendedora y con profunda vocación de servicio especializada en Aplicaciones Móviles y Web. <br /><br />
+
+Desarrollamos sistemas a medida, satisfaciendo así las necesidades específicas de nuestros clientes, logrando que éste obtenga el mayor valor por su inversión. <br /> <br />
+Contamos tambien con una amplia variedad de productos propios para la implementación en pequeñas y medianas empresas, cumpliendo siempre 
+la máxima calidad, servicio y compromiso que su empresa merece. 
+
+
+            </div>
+            <div class="parrafo" >				
+
+Trabajamos para que nuestros clientes tengan éxito con sus negocios. Y nosotros con ellos. 
+Ya no debe preguntarse si puede afrontar el costo de tener su sitio en Internet o la aplicacion movil para su empresa… debe preguntarse si puede afrontar el costo de no tenerlos. <br /><br />
+
+            </div>
+            <br clear="all" />
+            <!--h2>
+            	The Team
+            </h2>
+            <div class="center">
+                <div class="profile">
+                	<div class="clavo">&nbsp;</div>
+                    <img src="images/profile-01.png" />
+                    <h3>Partner Name</h3>
+                    <p>Lorem ipsum dolor sit amet, lacus ut felis bibendum luctus nec eu les nunc gravida. Nullam in est vitae.</p>
+                </div>
+                <div class="profile">
+                	<div class="clavo">&nbsp;</div>
+                    <img src="images/profile-01.png" />
+                    <h3>Partner Name</h3>
+                    <p>Lorem ipsum dolor sit amet, lacus ut felis bibendum luctus nec eu les nunc gravida. Nullam in est vitae.Lorem ipsum dolor sit amet, lacus ut felis bibendum luctus nec eu les nunc gravida. Nullam in est vitaeLorem ipsum dolor sit amet, lacus ut felis bibendum luctus nec eu les nunc gravida. Nullam in est vitaeLorem ipsum dolor sit amet, lacus ut felis bibendum luctus nec eu les nunc gravida. Nullam in est vitae</p>
+                </div>
+                <div class="profile">
+                	<div class="clavo">&nbsp;</div>
+                    <img src="images/profile-01.png" />
+                    <h3>Partner Name</h3>
+                    <p>Lorem ipsum dolor sit amet, lacus ut felis bibendum luctus nec eu les nunc gravida. Nullam in est vitae.</p>
+                </div>
+                <br clear="all" />
+            </div-->
+            <div class="ancla">
+                <div class="ancla-top">
+                    <a onclick="$.scrollTo('#about',800)">
+	                    &nbsp;
+                    </a>
+                </div>
+            </div>
+        </div>
+	<!-- cierra ABOUT US -->
+    
+    <!-- inica WORK -->
+    	<div id="work">
+        	<div class="title">
+            	<img src="images/work.png" />
+            </div>
+            <div class="slider">
+            	<div class="ventana">
+                	<div class="tittle-wood">
+                    	Mobile
+                    </div>
+                    <div class="slide">
+                    	<!--div class="arrow-left">
+                        	<a href="#">&nbsp;</a>
+                        </div-->
+                        <div class="slide-window">
+
+                        	<div class="item">
+                            	<div class="item-img">
+                                	<a onclick="$.scrollTo({top:'1050px', left:'750px'},800)"><img src="images/item-img.jpg" border="0" /></a>
+                                </div>
+                                <h1>Falta Envido</h1>
+                                <p>Anotador del truco con estilo, practico para viajes…</p>
+                            </div>
+                            
+                            <div class="item">
+                            	<div class="item-img">
+                                	<a onclick="$.scrollTo({top:'1050px', left:'1600px'},800)"><img src="images/item-cuando.png" border="0" /></a>
+                                </div>
+                                <h1>Cuando llega</h1>
+                                <p>Servicio de frecuencia de colectivos de la cuidad de Rosario…</p>
+                            </div>
+
+                        </div>
+                        <!--div class="arrow-right">
+                        	<a href="#">&nbsp;</a>
+                        </div-->
+                    </div>
+                </div>
+                
+                <div class="ventana">
+                	<div id="webworks" class="tittle-wood">
+                    	Web
+                    </div>
+                    <div class="slide">
+                    	<!--div class="arrow-left">
+                        	<a href="#">&nbsp;</a>
+                        </div-->
+                        <div class="slide-window">
+
+                        	<div class="item">
+                            	<div class="item-img">
+                                	<a onclick="$.scrollTo({top:'1300px', left:'4000px'},800)"><img src="images/item-ios.png" border="0" /></a>
+                                </div>
+                                <h1>IOS Mallas</h1>
+                                <p>Diseño sitio web y catalogo online exclusivo para clientes...</p>
+                            </div>
+                            
+                            <div class="item">
+                            	<div class="item-img">
+                                	<a onclick="$.scrollTo({top:'1300px', left:'4800px'},800)"><img src="images/item-r12.png" border="0" /></a>
+                                </div>
+                                <h1>Ruta12</h1>
+                                <p>Creacion del sitio web para la empresa Ruta 12…</p>
+                            </div>
+
+                        </div>
+                        <!--div class="arrow-right">
+                        	<a href="#">&nbsp;</a>
+                        </div-->
+                    </div>
+                </div>
+            </div>
+            <br clear="all" />
+            <div class="ancla">
+                <div class="ancla-top">
+                    <a onclick="$.scrollTo('#about',800)">
+	                    &nbsp;
+                    </a>
+                </div>
+            </div>
+            
+            <!--- RAMA IZQUIERDA -->
+            <div class="rama-izquierda">
+                <div class="rama-fin">
+                	&nbsp;
+                </div>
+                    <div class="cartel" id="falta-envido">
+                    	<!-- LORO -->
+                        <div class="detail-loro">
+                            <img src="images/detail-loro.png" />
+                        </div>
+                        <!-- Cierra LORO -->
+                    	<div class="cartel-top">
+                        	<div class="volver">
+                            	<a onclick="$.scrollTo('#work',800)">&nbsp;</a>
+                            </div>
+                            <div class="more">
+                            	<!--div class="more-left">
+                                	<a href="#">&nbsp;</a>
+                                </div-->
+                                <div class="more-right">
+                                	<a onclick="$.scrollTo({top:'1050px', left:'1600px'},800)">&nbsp;</a>
+                                </div>
+                                <br clear="all" />
+                            </div>
+                        </div>
+
+
+						<div class="cartel-left">
+                        	<h1>Kuesty</h1>
+							<div align="center"> <img src="images/kuesty-256x256.png" border="0" height="256px" /> </div>
+                        </div>
+						<div class="cartel-right">
+                            <div class="cartel-social">
+                            	<h4><a href="http://www.kuesty.com" target="_blank">http://www.kuesty.com</a></h4>
+                                <div class="cs-facebook">
+                                	<a href="https://www.facebook.com/kuestyapp" target="_blank">&nbsp;</a>
+                                </div>
+                             </div>
+
+							<div class="cartel-p" style="padding-top:0px;">
+                            	<p>
+Kuesty es una aplicación gratuita para teléfonos móviles que trata de resolver el problema de decidir donde salir a comer o tomar algo.
+Te ayudará en la búsqueda del restaurant más cercano y a su vez el que más se amolde a tus necesidades. También podrás calificar vos mismo los locales y ver las calificaciones de los demás.
+Kuesty te dará información de los lugares, distancias a ellos, podrás llamar y reservar directamente desde tu móvil. También podrás hacer amigos nuevos que compartan tus mismos gustos y hacerte fan de los restaurants para recibir promos y descuentos! </p>
+                            </div>
+                            <div class="cr-bottom" style="margin-top:50px;">
+                            	<ul>
+                                	<li class="m-android"><a href="https://play.google.com/store/apps/details?id=com.Kuesty" target="_blank">&nbsp;</a></li>
+                                	<li class="m-iphone"><a href="http://itunes.apple.com/us/app/kuesty/id514762136?l=es&ls=1&mt=8" target="_blank">&nbsp;</a></li>
+                                </ul>
+                                <!--div class="qr">
+                                	<p>Download</p>
+                                	<img src="images/qr.jpg" border="0" />
+                                </div-->
+                            </div>
+						</div>
+                        <br clear="all" />
+
+
+
+                       </div>
+                    
+                  
+                    <div class="cartel">
+                    	<div class="cartel-top">
+                        	<div class="volver">
+                            	<a onclick="$.scrollTo('#work',800)">&nbsp;</a>
+                            </div>
+                            <div class="more">
+                            	<div class="more-left">
+                                	<a onclick="$.scrollTo({top:'1050px', left:'750px'},800)">&nbsp;</a>
+                                </div>
+                                <div class="more-right">
+                                	<a onclick="$.scrollTo('#work',800)">&nbsp;</a>
+                                </div>
+                                <br clear="all" />
+                            </div>
+                        </div>
+
+                     <div class="cartel-left">
+                        	<h1>Falta Envido</h1>
+							<div align="center"> <img src="images/faltaenvido-256x256.png" border="0" /> </div>
+                        </div>
+                        
+						<div class="cartel-right">
+                        	<div class="cartel-social">
+                            	<h4><a href="http://www.faltaenvido.com" target="_blank">http://www.faltaenvido.com</a></h4>
+                                <div class="cs-facebook">
+                                	<a href="https://www.facebook.com/faltaenvidoapp" target="_blank">&nbsp;</a>
+                                </div>
+                             </div>
+                            <div class="cartel-p">
+                                <p>
+El juego de truco es un tradicional juego de cartas Argentino. Este clasico juego se suele jugar en cualquier momento y lugar donde haya un maso de cartas españolas. 
+Alguna vez has estado con cartas y sin papel y lapiz para anotar ? Bueno, FaltaEnvido te hace la vida mas facil dando te la posibilidad de ir anotando el puntaje en tu movil con una interfaz amigable y facil de usar. Asi que ahora bajalo y a usar el anotador de truco.
+</p>
+                            </div>
+                            <div class="cr-bottom">
+                            	<ul>
+                                	<li class="m-android"><a href="https://market.android.com/details?id=com.faltaenvido" target="_blank">&nbsp;</a></li>
+                                    <li class="m-ovi"><a href="http://store.ovi.com/content/130641" target="_blank">&nbsp;</a></li>
+                                </ul>
+                                <!-- div class="qr">
+                                	<p>Download</p>
+                                	<img src="images/qr.jpg" border="0" />
+                                </div-->
+                            </div>
+						</div>
+                        <br clear="all" />
+
+
+                    </div>
+
+				  <div class="cartel">
+                    	<!-- ORNERO -->
+                        <div class="detail-ornero">
+                            <img src="images/detail-ornero.png" />
+                        </div>
+                        <!-- Cierra ORNERO -->
+                    	<div class="cartel-top">
+                        	<div class="volver">
+                            	<a onclick="$.scrollTo('#work',800)">&nbsp;</a>
+                            </div>
+                            <div class="more">
+                            	<div class="more-left">
+                                	<a onclick="$.scrollTo({top:'1050px', left:'750px'},800)">&nbsp;</a>
+                                </div>
+                                <div class="more-right">
+                                	<a onclick="$.scrollTo('#work',800)">&nbsp;</a>
+                                </div>
+                                <br clear="all" />
+                            </div>
+                        </div>
+                        <div class="cartel-left">
+                        	<h1>Cuando llega</h1>
+							<div align="center"> <img src="images/cuandollega-256x256.png" border="0" /> </div>
+                        </div>
+						<div class="cartel-right">
+                        	<div class="cartel-social">&nbsp;</div>
+                            <div class="cartel-p">
+                            	<p>Aplicación que permite consultar el servicio de frecuencia de colectivos de la ciudad de Rosario. Basada en la información dada por el sitio web de la municipalidad de Rosario y permite saber cuanto falta para que llegue el próximo colectivo de todas las lineas del ETR.</p>
+                            </div>
+                            <div class="cr-bottom">
+                            	<ul>
+                                	<li class="m-android"><a href="https://play.google.com/store/apps/details?id=com.cuandollegaandroid" target="_blank">&nbsp;</a></li>
+                                	<li class="m-iphone"><a href="http://itunes.apple.com/us/app/cuando-llega/id509324541?l=es&mt=8" target="_blank">&nbsp;</a></li>
+                                    <li class="m-ovi"><a href="http://store.ovi.com/content/208586" target="_blank">&nbsp;</a></li>
+                                </ul>
+                                <!--div class="qr">
+                                	<p>Download</p>
+                                	<img src="images/qr.jpg" border="0" />
+                                </div-->
+                            </div>
+						</div>
+                        <br clear="all" />
+
+
+                    </div>
+
+
+
+
+                <div class="rama-inicio">
+                	&nbsp;
+                </div>
+                <br clear="all" />
+            </div>
+            <!-- cierra RAMA IZQUIERDA -->
+            
+            <!-- RAMA DERECHA -->
+            <div class="rama-derecha">
+            	<div class="rama-inicio-derecha">
+                	&nbsp;
+                </div>
+
+                <div class="cartel">
+                    <div class="cartel-top">
+                        <div class="volver">
+                            <a onclick="$.scrollTo('#work',800)">&nbsp;</a>
+                        </div>
+                        <div class="more">
+                            <div class="more-left">
+                                <a onclick="$.scrollTo('#work',800)">&nbsp;</a>
+                            </div>
+                            <div class="more-right">
+                                <a onclick="$.scrollTo({top:'1300px', left:'4800px'},800)">&nbsp;</a>
+                            </div>
+                            <br clear="all" />
+                        </div>
+                    </div>
+
+                    
+                    <div class="cartel-left">
+                        <h1>IOS Mallas</h1>
+                        <img src="images/screen-ios.png" border="0" />
+                    </div>
+                    
+                    <div class="cartel-right">
+                        <div class="cartel-social">
+                            <h4><a href="http://www.iosmallas.com.ar">www.iosmallas.com.ar</a></h4>
+                            <!--div class="cs-facebook">
+                                <a href="#">&nbsp;</a>
+                            </div>
+                            <div class="cs-twitter">
+                                <a href="#">&nbsp;</a>
+                            </div-->
+                        </div>
+                        <div class="cartel-p">
+                            <p>Diseño y desarrollo del sitio web iosmallas.com.ar. Catálogo online mediante login para uso exclusivo de clientes.</p>
+                        </div>
+                        <!--div class="cr-bottom">
+                            <ul>
+                                <li class="m-android"><a href="#">&nbsp;</a></li>
+                                <li class="m-bb"><a href="#">&nbsp;</a></li>
+                                <li class="m-iphone"><a href="#">&nbsp;</a></li>
+                                <li class="m-ovi"><a href="#">&nbsp;</a></li>
+                            </ul>
+                            <div class="qr">
+                                <p>Download</p>
+                                <img src="images/qr.jpg" border="0" />
+                            </div>
+                        </div-->
+                    </div>
+                    <br clear="all" />
+
+                </div>
+                        
+                <div class="cartel">
+                	<!-- CANARIO -->
+                	<div class="detail-canarios">
+                    	<img src="images/detail-canarios.png" />
+                    </div>
+                    <!-- cierra CANARIOS -->
+                    <div class="cartel-top">
+                        <div class="volver">
+                            <a onclick="$.scrollTo('#work',800)">&nbsp;</a>
+                        </div>
+                        <div class="more">
+                            <div class="more-left">
+                                <a onclick="$.scrollTo({top:'1300px', left:'4000px'},800)">&nbsp;</a>
+                            </div>
+                            <br clear="all" />
+                        </div>
+                    </div>
+
+                    <div class="cartel-left">
+                        <h1>Ruta 12</h1>
+                        <img src="images/screen-r12.png" border="0" />
+                    </div>
+                    <div class="cartel-right">
+                        <div class="cartel-social">
+                            <h4><a target="_blank" href="http://www.ruta12.com">http://www.ruta12.com</a></h4>
+                        </div>
+                        <div class="cartel-p">
+                            <p>Diseño y desarrollo del sitio web ruta12.com.ar</p>
+                        </div>
+                    </div>
+                    <br clear="all" />
+
+                </div>
+
+                <div class="rama-fin-derecha">
+                    &nbsp;
+                </div>
+                <br clear="all" />
+            </div>
+            <!--- cierra RAMA DERECHA -->
+            
+            
+        </div>
+	<!-- cierra WORK -->
+    
+    <!-- inica CONTACT -->
+    	<div id="contacto">
+        	<div class="title">
+            	<img src="images/contact.png" />
+            </div>
+            <div class="formulario">
+            	<form name="contact_form" method="post" action="">
+                    <div class="form">
+                        <div id="form_result"></div>
+                        <div>
+                            <input name="_nombre-y-apellido" id="form_name" type="text"  value="Name" onblur="if(this.value == '') this.value='Name';" onfocus="if(this.value == 'Name')this.value='';"/>
+            				<div class="contact-error" style="bottom:463px; display:none;" >
+            					U forgot this one...
+            				</div>
+                            <!--div class="error_msg"> </div-->
+                        </div>
+                        <div>
+                             <input name="_email" id="form_email" type="text"  value="Email"  onblur="if(this.value == '') this.value='Email';" onfocus="if(this.value == 'Email')this.value='';"/>
+				            <div class="contact-error" style="bottom:415px;display:none;">
+            					U forgot this one...
+            				</div>
+                        </div>
+                        <div>
+                            <textarea name="_consulta" id="form_comments" cols="5" rows="5" onblur="if(this.value == '') this.value='Comments?';" onfocus="if(this.value == 'Comments?') {this.innerHTML='';this.value='';}">Comments?</textarea>
+				            <div class="contact-error" style="bottom:368px;display:none;">
+            					U forgot this one...
+            				</div>
+                        </div>
+                        <input class="envio" type="button" border="0" value="&nbsp;" width="58" height="24" onclick="urucas.checkFormData();" name="submit_ajax" />
+                    </div>	            
+                </form>
+            </div>
+            <div class="contact-error" style="display:none;">
+            	Error Text
+            </div>
+            <div class="contact-ok" style="display:none;">
+            	OK Text
+            </div>
+            <div class="social">
+            	<div class="clavo">&nbsp;</div>
+                <div class="social-cont">
+                	<h3>Social Urucas</h3><br />
+                    <div class="social-facebook">
+                        <a href="#">facebook.com/urucas</a>
+                    </div>
+                    <div class="social-twitter">
+                        <a href="#">@urucas</a>
+                    </div>
+				</div>
+                <div class="social-bottom">
+                	&nbsp;
+                </div>
+            </div>
+            <br clear="all" />
+            <div class="ancla">
+                <div class="ancla-top">
+                    <a onclick="$.scrollTo('#work',800)">
+	                    &nbsp;
+                    </a>
+                </div>
+            </div>
+        </div>
+	<!-- cierra CONTACT -->
+
+    </div>
+    
+  			<div class="footer">
+                <div class="footer-cont">
+                <div class="footer-info">
+					URUCAS
+					<ul class="footer-lis">
+						<li>Desarrollo movil multiplataforma</li>
+						<li>Android</li>
+						<li>iPhone</li>
+						<li>Diseño web</li>
+						<li>Desarrollo web</li>
+					</ul>
+                    <!--div class="firma">
+                        <img src="images/footer-logo.png" />
+                    </div-->
+                    <br clear="all" />
+                </div>
+                        </div>
+        </div>
+
+	<script type="text/javascript">
+		function onload() {
+			var url = document.location.href;
+			if(url.indexOf("#cuandollega") != -1) {
+				$.scrollTo({top:'1050px', left:'1600px'},800);	
+			}else if(url.indexOf("#faltaenvido") != -1) {
+				$.scrollTo({top:'1050px', left:'750px'},800);
+			}else if(url.indexOf("#iosmallas") != -1) {
+				$.scrollTo({top:'1300px', left:'4000px'},800);
+			}else if(url.indexOf("#ruta12") != -1) {
+				$.scrollTo({top:'1300px', left:'4800px'},800);			
+			}
+		}
+	</script>
+
+  
+
+</body>
+</html>
