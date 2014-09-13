@@ -78,3 +78,21 @@ body{
 .row {
 	margin-right:0px !important;
 }
+
+.modal-product{
+	text-align:center;
+}
+
+.modal-product .modal-body, .modal-product .modal-header{
+	text-align:left;
+}
+
+.modal-product .modal-content{
+	margin-top:-30px;
+	z-index:-1;
+	background-color:#222;
+}
+
+.modal-product .close{
+	color:#fff;
+}
