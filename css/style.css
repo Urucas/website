@@ -58,14 +58,20 @@ body{
 
 .pattern {
 	text-align:center;
+		padding:20px;
 }
 
 .pattern li{
 	list-style-type:none;
+	background-color:rgba(0,0,0,0.6);
+	padding:8px;
 	float:left;
+	margin:8px;
+	border-radius:6px;
 }
 
 .pattern img{
 	min-width:150px;
+	max-width:200px;
 }
 
