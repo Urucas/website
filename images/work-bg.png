@@ -1,0 +1,29 @@
+
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="shortcut icon" href="favicon.gif" type="image/x-icon"/>
+<head>		
+    <title>Z I R I S - Página no encontrada</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="es"/>
+    <meta name="title" lang="es" content="Ziris - 404"/>
+    <meta name="description" lang="es" content="Elaboramos tu sitio, en cuanto a imagen, funcionamiento e instalación final, aplicando las más modernas tecnologías que aseguran confiabilidad y una mejor experiencia de usuario."/>
+    
+    <meta name="keywords" lang="es" content="ziris, web, productos, multimedia, desarrollos, programación, php, html, css, rosario"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="google-site-verification" content="NWuwyuaL4dQ1kO6JXX_-GwZ8LAQVVDgxQcmPjUr9EcA" />
+    <META name="y_key" content="6a337b7c2c0ee4fb">
+     <link rel="stylesheet" href="css/404.css" type="text/css" media="screen"/>
+
+</head>
+    <body>
+        <div class="centrado">
+            <div>
+                página no encontrada.
+                <a href="/home.html">ir a la <b>home</b></a>
+            </div>
+        </div>
+    </body>
+</html>
+                    

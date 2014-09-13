@@ -1,0 +1,28 @@
+{
+  "name": "Urucas RWD",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Urucas/website",
+  "authors": [
+    "Urucas <hello@urucas.com>"
+  ],
+  "description": "urucas responsive site",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "urucas",
+    "responsive",
+    "rwd",
+    "mobile",
+    "development"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

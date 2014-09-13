@@ -14,7 +14,7 @@ $cabecera = "Content-type: text/html\r\n";
 <title>Urucas</title>
 </head>
 <body>
-	<div style="width:700px;height:395px;background:#E6E6E6 url(http://www.urucas.com/images/cartel.png)">
+	<div style="width:700px;height:370px;background:#E6E6E6 url(http://www.urucas.com/images/cartel.png) no-repeat;background-size: contain;">
 		<div >
 			<img style="margin:100px 0 6px 100px;" src="http://www.urucas.com/images/footer-logo.png" />
 		</div>
