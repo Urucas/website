@@ -43,10 +43,19 @@ body{
 	width:531px;
 }
 
-.anclas {
-	width: 854px;
+.ancla {
+	width: 100%;
 	background: url('../images/ancla-bg.jpg') no-repeat;
+	background-position:center;
 	height: 40px;
+}
+
+.ancla-top a {
+	display:none;
+	height: 40px;
+	float: right;
+	background: url('../images/ancla-flecha.png') no-repeat center top;
+	width: 40px;	
 }
 
 .footer {
@@ -57,8 +66,13 @@ body{
 }
 
 .pattern {
-	text-align:center;
-	padding-left:20px;
+	margin-top:30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pattern ul {
+	padding:0; margin:0;
 }
 
 .pattern li{
@@ -96,3 +110,27 @@ body{
 .modal-product .close{
 	color:#fff;
 }
+
+.volo {
+	margin-top: -120px;
+	margin-left: 30%;
+}
+
+.volo img{
+	width:80px;
+}
+
+
+@media (max-width: 520px) {
+  .volo {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+	.pattern {
+		width:70%;
+	}
+}
+
+
