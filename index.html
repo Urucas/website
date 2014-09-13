@@ -155,10 +155,9 @@
 	  // do something...
 		var prid = e.relatedTarget.rel;
 		var pr   = products[prid];
-		console.log(pr);
 		if(pr == undefined) return;
-		$('#product-label').text(pr.title);
-		$('#product-desc').text(pr.desc);
+		$('#product-label').html(pr.title);
+		$('#product-desc').html(pr.desc);
 	});
 	$('#product-modal').on('hidden.bs.modal', function(e) {
 		$('#product-label').html('&nbsp;');
