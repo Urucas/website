@@ -59,10 +59,20 @@ body{
 }
 
 .footer {
-	background-image: url('../images/footer.png');
-	/*url('../images/wrapper.png'); */
+	background-image: url('../images/footer.png'), url('../images/wrapper.png');
 	background-position: center;
 	min-height:213px;
+}
+
+.footer img {
+	float:right;
+	-moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+	margin-right:25px;
 }
 
 .pattern {
