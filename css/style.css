@@ -133,4 +133,19 @@ body{
 	}
 }
 
+.footer-icons ul{
+	margin:0px; padding:0px;
+}
 
+.footer-icons li {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	float:left;
+}
+
+.footer-icons img {
+	width:30px;
+	height:30px;
+	margin: 4px;
+}
