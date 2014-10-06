@@ -15,6 +15,15 @@ var products = {
 		title : 'BA Ciudad Verde', 
 		desc: 'No tires la basura por la calle! Reciclala, tirala en los contenedores. Busca la Campana Verde o contenedor mas cercano a tu posicion con la aplicacion para Android! Ayuda al medioambiente <br /><br /> Buenos Aires Ciudad Verde, aplicacion movil para Android para buscar el contenedor o campana verde mas cercano, realizada para el #BaHAckatonVerde del GCBA.<br /><br /><a href="https://play.google.com/store/apps/details?id=com.urucas.bamaslimpia" target="_blank">BA Ciudad Verde en Google Play</a><br /><br /><span>java</span><span>android</span><span>gelocation</span>'
 	},
+	'popcorn' : {
+		title: "PT Remote Control",
+		desc: 'Have you download the new release of Popcorn Time app published this Sep. 17 ? Yes ? Well you should then have the Android Remote Control for it!<br /><br />PT Remote Control is the Android remote control working for the latest release of Popcorn Time app(Beta 3.3), manage the desktop app from the confort of your phone, change between movies or tv series, toggle your favourites and watched movies, select a season to watch, play it, mute it.<br /><br /><br /><a href="https://github.com/Urucas/popcorntime-remote-control" target="_blank">Contribute on github</a><br /><br /><span>java</span><span>android</span><span>web sockets</span>'
+	},
+	'netflix-trailers' : {
+		title: "Netflix trailers",
+		desc: 'Watch your netflix movies or series trailers right in the Netflix webiste. With this extension, when the movie info pops up, know you\'ll see a "View Trailer" button, click it to directly watch a youtube trailer.<br /><br /><a href="https://chrome.google.com/webstore/detail/netflix-trailers/cghmojgimpekpgegljolidgacdhmikmi" target="_blank">Chrome web store</a><br /><br /><span>javascript</span><span>chrome extension</span><span>youtube</span>'
+	},
+
 	'faltaenvido' : {
 		title : 'Faltaenvido',
 		desc: 'El juego de truco es un tradicional juego de cartas Argentino. Este clasico juego se suele jugar en cualquier momento y lugar donde haya un maso de cartas espa&ntilde;olas. <br /><br /> Alguna vez has estado con cartas y sin papel y lapiz para anotar ? Bueno, FaltaEnvido te hace la vida mas facil dando te la posibilidad de ir anotando el puntaje en tu movil con una interfaz amigable y facil de usar. Asi que ahora bajalo y a usar el anotador de truco.<br /><br /><a href="https://play.google.com/store/apps/details?id=com.faltaenvido" target="_blank">Faltaenvido en Google Play</a><br /><br /><span>html</span><span>javascript</span><span>phonegap</span><span>android</span><span>ios</span><span>symbian</span>'
