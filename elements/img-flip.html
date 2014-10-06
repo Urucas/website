@@ -1,0 +1,53 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="img-flip" attributes="flip rotate src">
+  <template>
+		<style>
+		.img-flip-horizontal{
+			-moz-transform: scaleX(-1);
+		  -o-transform: scaleX(-1);
+		  -webkit-transform: scaleX(-1);
+		  transform: scaleX(-1);
+		  filter: FlipH;
+		  -ms-filter: "FlipH";
+		}
+		.img-flip-vertical{
+			-moz-transform: scaleY(-1);
+  	  -webkit-transform: scaleY(-1);
+    	-o-transform: scaleY(-1);
+	    transform: scaleY(-1);
+  	  -ms-filter: flipv; /*IE*/
+    	filter: flipv; /*IE*/	
+		}	
+		</style>
+		<img id="imgFlip" src="{{src}}" />
+  </template>
+	<script>
+    Polymer('img-flip', {
+      ready: function() {
+				var flip = this.flip;
+				if(flip == undefined) return;
+
+        if(flip.indexOf("horizontal") != -1) {
+					this.flipHorizontal();
+				} 
+				
+				if(flip.indexOf("vertical") != -1) {
+					this.flipVertical();	
+				}
+      },
+			flipHorizontal: function() {
+				var img = this.$.imgFlip;
+				if(img.classList) {
+					img.classList.add("img-flip-horizontal");
+				}
+			},
+			flipVertical: function() {
+				var img = this.$.imgFlip;
+				if(img.classList) {
+					img.classList.add("img-flip-vertical");
+				}
+			}
+    });
+  </script>
+</polymer-element>
