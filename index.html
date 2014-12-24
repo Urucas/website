@@ -139,11 +139,15 @@
 </div>
 <!-- termina wrapper -->
 
+<a name="santa"></a>
+
 <!-- empieza footer -->
 <div class="footer">
-	<img-flip src="images/detail-oruganaranja.png" flip="horizontal"/>
+	<div id="santa"></div>
+	<!-- img-flip src="images/detail-oruganaranja.png" flip="horizontal"/-->
 </div>
 <!-- termina footer -->
+
 
 <div class="modal fade" id="product-modal">
 	<div class="modal-dialog modal-product">
@@ -176,9 +180,12 @@
 		$('#product-label').html('&nbsp;');
 		$('#product-desc').html('&nbsp;');
 	});
+	$q = jQuery.noConflict();
 </script>
 
 <script src="https://cdn.rawgit.com/Urucas/watermark/master/watermark.js"></script>
+<script src="js/santa.js"></script>
+
 
 </body>
 </html>
