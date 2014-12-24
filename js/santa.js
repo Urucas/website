@@ -65,41 +65,44 @@ function _asInstance(id, params){
  * Santa.js
  */
 $(document).ready(function(){
-	$('#santa').ScrollTo();
 
-	_as.addSprite("santa",{
-		width:600,
-		height:600,
-		cols:4,
-		rows:4,
-		image:"images/santa.jpg",
-		interval: 10
-	});
+	setTimeout(function(){
+		$('#santa').ScrollTo();
 
-	var audio = document.getElementById("smooth");
-	var w = window.screen.availWidth;
-	var michael = w/2;
-	var stopMichael = (w/4)*3;
-	var flipped = false;
-	var t = setInterval(function(){
-		var pos = parseInt(santa.style.left);
-		if(pos > michael && !flipped && pos < stopMichael){
-			flipped = true;
-			santa.classList.add("flipped");
-			bubble.style.display = "block";
-		}
-		if(pos > stopMichael) {
-			santa.classList.remove("flipped");
-			bubble.style.display = "none";
-		}
-		if(pos > w+150) {
-			window.clearInterval(t);
-			_as.stop();
-		}else{
-			bubble.style.left = (pos+5)+"px";
-			santa.style.left = (pos+10)+"px";
-		}
-	}, 100);
+		_as.addSprite("santa",{
+			width:600,
+			height:600,
+			cols:4,
+			rows:4,
+			image:"images/santa.jpg",
+			interval: 10
+		});
+
+		var w = window.screen.availWidth;
+		var michael = w/2;
+		var stopMichael = (w/4)*3;
+		var flipped = false;
+		var t = setInterval(function(){
+			var pos = parseInt(santa.style.left);
+			if(pos > michael && !flipped && pos < stopMichael){
+				flipped = true;
+				santa.classList.add("flipped");
+				bubble.style.display = "block";
+			}
+			if(pos > stopMichael) {
+				santa.classList.remove("flipped");
+				bubble.style.display = "none";
+			}
+			if(pos > w+150) {
+				window.clearInterval(t);
+				_as.stop();
+			}else{
+				bubble.style.left = (pos+5)+"px";
+				santa.style.left = (pos+10)+"px";
+			}
+		}, 100);
+
+	}, 3000);
 
 });
 
@@ -107,6 +110,3 @@ santa.style.position = "relative";
 santa.style.left= "-150px";
 santa.style.top = "-32px";
 santa.style.display = "inline-block";
-
-
-
