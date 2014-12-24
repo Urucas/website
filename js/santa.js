@@ -18,6 +18,10 @@ function _asController() {
 			_as.sprites[i].animate();
 		}
 	}, this.interval);
+
+	this.stop = function(){
+		window.clearInterval(this.intervalID);
+	}
 }
 
 function _asInstance(id, params){
@@ -29,7 +33,6 @@ function _asInstance(id, params){
 	this.rows   = params.rows;
 	this.image  = params.image;
 	this.interval   = params.interval || 100;
-	console.log(this.interval);
 
 	this.posX = 0;
 	this.posY = 0;
@@ -73,13 +76,27 @@ $(document).ready(function(){
 		interval: 10
 	});
 
+	var audio = document.getElementById("smooth");
 	var w = window.screen.availWidth;
-
+	var michael = w/2;
+	var stopMichael = (w/4)*3;
+	var flipped = false;
 	var t = setInterval(function(){
 		var pos = parseInt(santa.style.left);
+		if(pos > michael && !flipped && pos < stopMichael){
+			flipped = true;
+			santa.classList.add("flipped");
+			bubble.style.display = "block";
+		}
+		if(pos > stopMichael) {
+			santa.classList.remove("flipped");
+			bubble.style.display = "none";
+		}
 		if(pos > w+150) {
 			window.clearInterval(t);
+			_as.stop();
 		}else{
+			bubble.style.left = (pos+5)+"px";
 			santa.style.left = (pos+10)+"px";
 		}
 	}, 100);

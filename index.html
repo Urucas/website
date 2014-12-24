@@ -11,6 +11,24 @@
 <script src="/bower_components/platform/platform.js"></script>
 <link rel="import" href="/elements/img-flip.html">
 
+<style>
+.flipped{
+	-moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+#bubble{
+	position:absolute;
+	left:49%;
+	margin-top:-70px;
+	display:none;
+}
+</style>
+
 </head>
 <body>
 
@@ -139,17 +157,21 @@
 </div>
 <!-- termina wrapper -->
 
-<a name="santa"></a>
 
 <!-- empieza footer -->
 
 <div class="footer">
+	<div id="bubble">
+		<img src="images/bubble.png" height="80px" width="auto" />
+	</div>
 	<div id="santa"></div>
 	<!-- img-flip src="images/detail-oruganaranja.png" flip="horizontal"/-->
 </div>
 
 <!-- termina footer -->
 
+
+<a name="santa"></a>
 
 <div class="modal fade" id="product-modal">
 	<div class="modal-dialog modal-product">
@@ -190,7 +212,6 @@
 
 <script src="https://cdn.rawgit.com/Urucas/watermark/master/watermark.js"></script>
 <script src="js/santa.js"></script>
-
 
 </body>
 </html>
